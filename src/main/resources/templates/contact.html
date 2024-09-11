@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head> </head>
+  <title>Contact Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+  <div id="content" class="max-w-lg mt-20 mx-auto p-6 bg-white shadow-lg rounded-lg text-center">
+    <h1 class="text-2xl font-semibold text-gray-800 mb-4">Login Required</h1>
+    <p class="text-lg text-gray-600 mb-6">To view your contacts, please log in to your account.</p>
+    <a
+      href="/login"
+      class="text-white bg-red-800 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-6 py-3 transition duration-150 ease-in-out"
+    >
+      Login
+    </a>
+  </div>
+  
+  <script>
+    console.log("Contact page loaded");
+  </script>
+</body>
+</html>
